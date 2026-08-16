@@ -1,35 +1,23 @@
 /* ============================================================
    PARTICIPATING CENTRES  —  one consistent record per program
    ------------------------------------------------------------
-   Every listing uses the SAME fields, in the same order. The
-   Locations page groups these into sections (by care type,
-   approach, or event day) and lists them alphabetically.
+   The Locations page lets families filter by care type, approach,
+   and event day, and lists matching programs alphabetically.
 
-   FIELDS (leave any as "" to hide that row on the card):
+   FIELDS (leave any "" to hide that line on the card):
 
-     {
-       name:       "Program name",                 // required
-       photo:      "willow.jpg",                    // image in /photos; "" = coloured placeholder
-       days:       "Both days",                     // "Both days" | "Thu Oct 1 (eve)" | "Sat Oct 3 (AM)"
-       care:       "Infant/Toddler, 30 months – school age",  // one or more of the 4 categories, comma-separated:
-                                                    //   "Preschool" · "Infant/Toddler" · "30 months – school age" · "School-aged care"
-       philosophy: "Reggio-inspired",               // Montessori | Play-based | Blended (…) | Academic | Reggio-inspired …
-       address:    "123 Example Rd, Richmond, BC",
-       hours:      "8:00 am – 4:30 pm, Mon–Fri",
-       languages:  "English, Mandarin",
-       funding:    "ACCB, CCFRI, CCOF, Wage Enhancement",   // subsidies the program accepts
-       fees:       "",                              // parent fees / tuition (NOT collected on the intake form — fill in as you get them)
-       services:   "Meals, extended hours",         // additional services offered
-       register:   "Email us or join the waitlist online",
-       phone:      "604-555-0100",
-       website:    "https://example.com",           // "" = no link
-       instagram:  "handle",                         // optional, no @
-       facebook:   "https://facebook.com/…",         // optional, full URL
-       youtube:    "handle"                           // optional, no @
-     }
-
-   PHOTOS: drop each image in a "photos" folder and put the filename in "photo".
-   FEES: the intake form did not ask for monthly fees, so most are blank — add them as you collect them.
+     name, photo, days,
+     care        // one or more of: "Preschool" · "Infant/Toddler" · "30 months – school age" · "School-aged care"
+     philosophy, address, hours,
+     closures    // non-operational days (winter break, etc.)
+     languages,
+     funding     // kept for reference; NOT shown on the card
+     fees        // parent fees / tuition (not collected on the intake form — fill in as you go)
+     included    // extras included in the fee
+     extras      // fee-for-service extras available to purchase
+     details     // other important info about the program
+     register, phone, website,
+     instagram, facebook, youtube   // optional
    ============================================================ */
 
 const CENTRES = [
@@ -38,9 +26,10 @@ const CENTRES = [
     care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Reggio-inspired",
     address: "12091 Cambie Road, Richmond, BC (Richmond Adult Education Centre, beside Mitchell Elementary)",
     hours: "8:00 am \u2013 4:30 pm (extended to 5:30 pm)",
+    closures: "2 weeks winter break, 2 weeks spring break",
     languages: "English, Korean, Ukrainian, Mandarin, Tagalog",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Meals; extended hours (4:30\u20135:30 pm)",
+    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "Toddlers: $1,124/mo. Junior Kindergarten: $117/mo (morning) or $1,000/mo (full day). All include the CCFRI discount.",
+    included: "", extras: "Meals; extended hours (4:30\u20135:30 pm)", details: "",
     register: "Email registration@ssocc.ca or join the waitlist online",
     phone: "604-377-8385", website: "https://www.ssocc.ca",
     instagram: "ssoccchildcare", facebook: "https://www.facebook.com/Stevestonsocietyofchildrenscentres/", youtube: "StevestonSocietyofCC"
@@ -50,8 +39,10 @@ const CENTRES = [
     care: "Infant/Toddler", philosophy: "Play-based",
     address: "10631 Gilmore Crescent, Richmond, BC",
     hours: "7:30 am \u2013 4:30 pm, Mon\u2013Fri",
+    closures: "Winter and summer, about 2 weeks each",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "",
+    included: "", extras: "",
+    details: "Only 4 children per day, all under 3. Serving the community 20+ years. Staff hold ECE + Infant/Toddler certification; big back garden.",
     register: "Email crystalstardaycare@shaw.ca or call 604-276-9816",
     phone: "604-276-9816", website: "",
     facebook: "https://www.facebook.com/p/Crystal-Star-Daycare-an-InfantToddler-Child-Care-100054590433583/"
@@ -60,20 +51,25 @@ const CENTRES = [
     name: "Kiddo House Montessori", photo: "", days: "Sat Oct 3 (AM)",
     care: "30 months \u2013 school age, School-aged care", philosophy: "Montessori",
     address: "6640 Blundell Road, Richmond, BC",
-    hours: "Full day", languages: "English, Mandarin, Cantonese",
+    hours: "Full day", closures: "Winter break",
+    languages: "English, Mandarin, Cantonese",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Meals (two snacks + hot lunch); Mandarin club",
+    included: "Mandarin club", extras: "Meals (two snacks + hot lunch)",
+    details: "Experienced staff, most on the team over a year.",
     register: "Register online or email kiddohousechildcare@gmail.com",
     phone: "778-886-0626", website: "https://kiddohousechildcare.ca"
   },
   {
-    name: "Hello Kids Learn – Afterschool Care and Daycamps", photo: "", days: "Both days",
+    name: "Hello Kids Learn \u2013 Afterschool Care and Daycamps", photo: "", days: "Both days",
     care: "School-aged care", philosophy: "Academic / traditional",
     address: "Unit 201, 6640 Blundell Rd, Richmond, BC V7C 1H8",
     hours: "8:30 am \u2013 6:30 pm; after-school 2:45 \u2013 7:00 pm",
+    closures: "Weekends and public holidays",
     languages: "English, Mandarin, Cantonese", funding: "ACCB, Wage Enhancement",
     fees: "Late pickup after 7 pm: $1/min",
-    services: "Transportation; enhancement programs (yoga, language); summer field trips",
+    included: "Snacks & fresh fruit; age-appropriate courses; summer field trips",
+    extras: "Transportation; enhancement programs (yoga, language)",
+    details: "Open until 7:00 pm.",
     register: "Email celaafterschool@gmail.com",
     phone: "778-951-3438", website: "https://www.hellokidslearn.com"
   },
@@ -81,9 +77,11 @@ const CENTRES = [
     name: "Thompson Early Learning \u2013 Rompers Preschool", photo: "", days: "Both days",
     care: "Preschool", philosophy: "Blended (play-based, Reggio-inspired)",
     address: "Thompson Community Centre, 5151 Granville Ave, Richmond, BC V7C 1E6",
-    hours: "9:00 am \u2013 1:00 pm", languages: "English, Japanese, Tagalog, Greek",
+    hours: "9:00 am \u2013 1:00 pm", closures: "Winter, spring & summer breaks",
+    languages: "English, Japanese, Tagalog, Greek",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "A 2-hour after-preschool program is in the works (details TBA)",
+    included: "", extras: "",
+    details: "A 2-hour program right after preschool is in development (details TBA).",
     register: "Contact Anna Thymis, Preschool Coordinator, by email, phone, or the website form",
     phone: "604-238-8497", website: "https://www.thompsonearlylearning.com"
   },
@@ -91,9 +89,12 @@ const CENTRES = [
     name: "Little Koala Montessori Academy (Clarke Place)", photo: "", days: "Both days",
     care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Montessori (AMI/AMS)",
     address: "110\u201312855 Clarke Place, Richmond, BC",
-    hours: "8:00 am \u2013 5:30 pm, Mon\u2013Fri", languages: "English",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "$75 registration + one month's deposit",
-    services: "",
+    hours: "8:00 am \u2013 5:30 pm, Mon\u2013Fri",
+    closures: "One week spring break (March), one week winter break (December)",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "$75 registration + one month's deposit",
+    included: "", extras: "",
+    details: "Certified AMS/AMI Montessori teachers. 3 infant/toddler rooms (capacity 34), 1 junior kindergarten room (capacity 25).",
     register: "Contact Little Koala to register or join the waitlist",
     phone: "778-999-9229", website: "https://www.littlekoalamontessori.com"
   },
@@ -101,9 +102,12 @@ const CENTRES = [
     name: "Little Koala Montessori Academy (Blundell Road)", photo: "", days: "Both days",
     care: "30 months \u2013 school age", philosophy: "Montessori (AMS)",
     address: "10011 Blundell Road, Richmond, BC",
-    hours: "8:00 am \u2013 5:30 pm, Mon\u2013Fri", languages: "English",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "$75 registration + one month's deposit",
-    services: "Optional hot lunch ($7\u20139/meal)",
+    hours: "8:00 am \u2013 5:30 pm, Mon\u2013Fri",
+    closures: "One week spring break (March), one week winter break (December)",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "$75 registration + one month's deposit",
+    included: "", extras: "Optional hot lunch ($7\u20139/meal, third-party caterer; opt in/out anytime)",
+    details: "Certified AMS Montessori teachers. 2 junior kindergarten rooms (capacity 41).",
     register: "Contact Little Koala to register or join the waitlist",
     phone: "778-999-9229", website: "https://www.littlekoalamontessori.com"
   },
@@ -111,9 +115,10 @@ const CENTRES = [
     name: "Blue Whale Children's Learning Centre", photo: "", days: "Sat Oct 3 (AM)",
     care: "30 months \u2013 school age", philosophy: "Blended (Montessori, purposeful play)",
     address: "8060 No. 1 Road, Richmond, BC",
-    hours: "8:00 am \u2013 5:00 pm", languages: "English, Mandarin, Cantonese",
+    hours: "8:00 am \u2013 5:00 pm", closures: "Spring break, winter break",
+    languages: "English, Mandarin, Cantonese",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Enhancement programs (yoga, language, dance, art)",
+    included: "", extras: "Enhancement programs (yoga, Mandarin, dance, art)", details: "",
     register: "Book a tour by phone or through the website, then register",
     phone: "604-754-7666", website: "https://www.bluewhaleedu.com"
   },
@@ -121,9 +126,11 @@ const CENTRES = [
     name: "Cedar Studio Outdoor Learning", photo: "", days: "Both days",
     care: "30 months \u2013 school age", philosophy: "Blended (Reggio-inspired, outdoor / land-based)",
     address: "Units 135 & 140, 6231 London Road, Richmond, BC",
-    hours: "8:00 am \u2013 5:00 pm", languages: "English, Mandarin, Cantonese, Hindi, Urdu",
+    hours: "8:00 am \u2013 5:00 pm", closures: "One week spring, two weeks winter",
+    languages: "English, Mandarin, Cantonese, Hindi, Urdu",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Meals (third-party); enhancement programs (yoga, language)",
+    included: "", extras: "Meals (third-party); enhancement programs (yoga, language)",
+    details: "Hands-on outdoor experiences intentionally designed to build early skills.",
     register: "Register through the Brightwheel link on the website",
     phone: "604-783-1014", website: "https://www.cedarstudio.co"
   },
@@ -131,9 +138,12 @@ const CENTRES = [
     name: "Kid Nest Infant and Toddler Daycare", photo: "", days: "Sat Oct 3 (AM)",
     care: "Infant/Toddler", philosophy: "Blended (Montessori, play-based)",
     address: "8531 Leslie Road, Richmond, BC V6X 1E6",
-    hours: "8:30 am \u2013 6:00 pm, Mon\u2013Fri", languages: "English, Chinese",
+    hours: "8:30 am \u2013 6:00 pm, Mon\u2013Fri", closures: "Winter break",
+    languages: "English, Chinese",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Meals; enhancement programs (yoga, Mandarin); daily themes, phonics, science, cooking, arts",
+    included: "Daily themes, Chinese & English phonics, Montessori works, science, cooking, arts",
+    extras: "Meals; enhancement programs (yoga, Mandarin)",
+    details: "Small groups, experienced educators, daily themes and photo updates.",
     register: "Register online or email wenxuan20120329@gmail.com",
     phone: "778-995-0583", website: "https://www.kidnestdaycare.com"
   },
@@ -141,9 +151,12 @@ const CENTRES = [
     name: "Little Earthlings Childcare", photo: "", days: "Both days",
     care: "30 months \u2013 school age", philosophy: "Blended (Reggio-inspired, play-based)",
     address: "3871 Moncton St, Richmond, BC V7E 3A7 (Steveston Village)",
-    hours: "7:30 am \u2013 5:30 pm, Mon\u2013Fri", languages: "English",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Daily outdoor & nature experiences; seasonal activities (included)",
+    hours: "7:30 am \u2013 5:30 pm, Mon\u2013Fri",
+    closures: "BC statutory holidays, two-week winter break, one-week summer break",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
+    included: "Daily outdoor & nature experiences, seasonal activities, and special learning experiences (in tuition)",
+    extras: "",
+    details: "In the heart of Steveston Village; strong family partnerships and a close-knit community.",
     register: "Contact via the website or email; book a tour, then register",
     phone: "604-370-6228", website: "https://www.littleearthlings.ca"
   },
@@ -151,9 +164,9 @@ const CENTRES = [
     name: "Connections Kids Club", photo: "", days: "Both days",
     care: "30 months \u2013 school age, School-aged care", philosophy: "Reggio-inspired",
     address: "5999 Blanshard Drive, Richmond, BC V7C 5V4",
-    hours: "7:00 am \u2013 5:30/6:00 pm (open year-round)",
+    hours: "7:00 am \u2013 5:30/6:00 pm", closures: "Open year-round",
     languages: "English, Mandarin, Cantonese", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Meals; enhancement programs (yoga, language); extended hours",
+    included: "", extras: "Meals; enhancement programs (yoga, language); extended hours", details: "",
     register: "Register at ccssociety.ca",
     phone: "778-798-8861", website: "https://www.ccssociety.ca"
   },
@@ -162,9 +175,11 @@ const CENTRES = [
     care: "Preschool", philosophy: "Blended (nature-based, emergent)",
     address: "2680 River Road, Richmond, BC",
     hours: "9:00 am \u2013 1:00 pm; some afternoons 1:30 \u2013 3:30 pm",
+    closures: "Winter break, spring break, stat holidays (summer camps run separately)",
     languages: "English (educators also speak German, Japanese, French)",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "",
+    included: "", extras: "",
+    details: "An outdoor school in its 13th year, operated by the Thompson Community Association.",
     register: "Complete the online registration, then email the Director",
     phone: "604-238-8437", website: "https://www.terranovanatureschool.com"
   },
@@ -172,9 +187,10 @@ const CENTRES = [
     name: "Willow Children's Centre", photo: "", days: "Sat Oct 3 (AM)",
     care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Reggio-inspired",
     address: "650\u20135688 Hollybridge Way, Richmond, BC",
-    hours: "7:30 am \u2013 6:00 pm", languages: "English, Mandarin, Cantonese",
+    hours: "7:30 am \u2013 6:00 pm", closures: "Christmas to New Year",
+    languages: "English, Mandarin, Cantonese",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "",
+    included: "", extras: "", details: "",
     register: "Join the Willow waitlist on the website",
     phone: "604-307-3490", website: "https://www.richmondchildcare.org"
   },
@@ -182,9 +198,10 @@ const CENTRES = [
     name: "Rothewood Academy \u2013 Richmond City Centre", photo: "", days: "Sat Oct 3 (AM)",
     care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Blended (Reggio, play-based, Montessori)",
     address: "7931 Alderbridge Way, Richmond, BC",
-    hours: "7:00 am \u2013 6:00 pm", languages: "English, Mandarin, Cantonese, Korean, Japanese",
+    hours: "7:00 am \u2013 6:00 pm", closures: "2 weeks winter break, 1 week summer break",
+    languages: "English, Mandarin, Cantonese, Korean, Japanese",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Extended hours; meals; enhancement programs (yoga, language); web-cam access",
+    included: "", extras: "Extended hours; meals; enhancement programs (yoga, language); web-cam access", details: "",
     register: "Contact richmond@rothewood.com",
     phone: "604-279-1818", website: "https://www.rothewood.com"
   },
@@ -192,9 +209,9 @@ const CENTRES = [
     name: "Lesco Montessori Daycare", photo: "", days: "Both days",
     care: "30 months \u2013 school age", philosophy: "Montessori",
     address: "12720 Cameron Drive, Richmond, BC",
-    hours: "8:30 am \u2013 5:30 pm", languages: "English",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Enhancement programs (yoga, language)",
+    hours: "8:30 am \u2013 5:30 pm", closures: "Winter and spring breaks",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
+    included: "", extras: "Enhancement programs (yoga, language)", details: "",
     register: "Register in person",
     phone: "778-926-0640", website: "https://lescomontessori.ca",
     instagram: "Lesco_Montessori", facebook: "https://www.facebook.com/p/Lesco-Montessori-School-100039731937048/"
@@ -203,9 +220,10 @@ const CENTRES = [
     name: "Dino-Mites Preschool", photo: "", days: "Sat Oct 3 (AM)",
     care: "Preschool", philosophy: "Play-based",
     address: "4071 Francis Road, Richmond, BC V7C 1J8",
-    hours: "9:00 am \u2013 1:00 pm", languages: "English",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Art, music, games, stories, active & quiet play (included)",
+    hours: "9:00 am \u2013 1:00 pm", closures: "Winter break, spring break, and summer",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
+    included: "Art, music, games, stories, active & quiet play", extras: "",
+    details: "An enriched play-based program.",
     register: "Contact by phone, email, or through the website",
     phone: "604-272-2423", website: "https://www.dinomitespreschool.com",
     facebook: "https://www.facebook.com/dinomitespreschool2017"
@@ -214,9 +232,10 @@ const CENTRES = [
     name: "Royal Blue Heron Montessori Academy", photo: "", days: "Thu Oct 1 (eve)",
     care: "30 months \u2013 school age", philosophy: "Montessori",
     address: "10111 4th Avenue, Richmond, BC V7E 1V5 (inside Manoah Steves Elementary)",
-    hours: "8:30 am \u2013 3:30 pm", languages: "English, Mandarin",
+    hours: "8:30 am \u2013 3:30 pm", closures: "Winter, spring, and summer breaks",
+    languages: "English, Mandarin",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Extended hours",
+    included: "", extras: "Extended hours", details: "",
     register: "Call, or leave a message on the website",
     phone: "778-866-3572", website: "https://royalblueheronmontessoriacademy.ca"
   },
@@ -224,9 +243,11 @@ const CENTRES = [
     name: "Renaissance Kids", photo: "", days: "Both days",
     care: "Infant/Toddler, 30 months \u2013 school age, School-aged care", philosophy: "Blended (Reggio, Montessori, academic)",
     address: "#1\u201312491 No. 2 Road, Richmond, BC",
-    hours: "7:00 am \u2013 5:30 pm", languages: "English, French",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    services: "Transportation; meals; extended hours; enhancement programs (music, dance, art, STEM, French)",
+    hours: "7:00 am \u2013 5:30 pm", closures: "Winter break",
+    languages: "English, French", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
+    included: "French language daily",
+    extras: "Transportation; meals; extended hours; enhancement programs (music, dance, art, STEM)",
+    details: "",
     register: "Sign up for the waiting list",
     phone: "604-723-3117", website: "https://www.renaissancekids.ca"
   }

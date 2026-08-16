@@ -191,11 +191,11 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 .loc-card .day  { color: #6b4f1c; background: color-mix(in srgb, var(--honey) 32%, #fff); }
 .loc-card h3 { font-size: 1.12rem; margin-bottom: .2rem; line-height: 1.25; }
 .loc-card .phil { color: var(--coral-deep); font-weight: 600; font-size: .9rem; margin-bottom: .7rem; }
-.loc-card dl { margin: 0; display: grid; grid-template-columns: 1.1rem 1fr; gap: .4rem .6rem; font-size: .92rem; align-items: start; }
-.loc-card dt { color: var(--coral-deep); display: grid; place-items: center; padding-top: .12rem; }
-.loc-card dt svg { width: 15px; height: 15px; }
-.loc-card dd { margin: 0; color: var(--ink-soft); }
-.loc-card dd a { word-break: break-word; }
+.loc-card .loc-facts { margin: 0; display: grid; grid-template-columns: 1.1rem 1fr; gap: .4rem .6rem; font-size: .92rem; align-items: start; }
+.loc-card .loc-facts dt { color: var(--coral-deep); display: grid; place-items: center; padding-top: .12rem; }
+.loc-card .loc-facts dt svg { width: 15px; height: 15px; }
+.loc-card .loc-facts dd { margin: 0; color: var(--ink-soft); }
+.loc-card .loc-facts dd a { word-break: break-word; }
 .loc-card .maplink { white-space: nowrap; font-weight: 600; }
 .loc-card .register { margin-top: .85rem; font-size: .9rem; color: var(--ink); }
 .loc-card .register span { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--coral-deep); margin-bottom: .1rem; }
@@ -276,3 +276,11 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 .loc-group:last-child { margin-bottom: 0; }
 .loc-group-head { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 1.35rem; color: var(--ink); margin: 0 0 1.1rem; padding-bottom: .5rem; border-bottom: 2px solid var(--sand); display: flex; align-items: center; gap: .6rem; }
 .loc-group-head span { font-family: 'Figtree', system-ui, sans-serif; font-size: .78rem; font-weight: 700; color: var(--coral-deep); background: var(--sand); border-radius: 999px; padding: .18rem .55rem; }
+
+/* Labeled detail rows (closures, fees, included, extras, good-to-know) */
+.loc-detail { margin: .95rem 0 0; border-top: 1px solid var(--line); padding-top: .8rem; display: grid; gap: .6rem; }
+.loc-detail dt { font-size: .68rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--coral-deep); }
+.loc-detail dd { margin: .12rem 0 0; font-size: .9rem; color: var(--ink-soft); line-height: 1.45; }
+/* three stacked filter rows */
+#loc-filter-care, #loc-filter-phil { margin-bottom: .55rem; }
+#loc-filter-day { margin-bottom: 1.9rem; }
