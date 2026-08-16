@@ -178,14 +178,27 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 .map-frame { border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; background: var(--sand); aspect-ratio: 16 / 9; margin-bottom: 2rem; }
 .map-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
 .map-placeholder { height: 100%; display: grid; place-content: center; text-align: center; gap: .3rem; color: var(--ink-soft); padding: 2rem; }
-.loc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1rem; }
-.loc-card { background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.2rem 1.3rem; }
-.loc-card h3 { font-size: 1.15rem; margin-bottom: .35rem; }
-.loc-card .care { display: inline-block; font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--coral-deep); background: var(--sand); padding: .2rem .55rem; border-radius: 999px; margin-bottom: .7rem; }
-.loc-card dl { margin: 0; display: grid; grid-template-columns: 1.2rem 1fr; gap: .35rem .6rem; font-size: .95rem; }
-.loc-card dt { color: var(--coral-deep); display: grid; place-items: center; }
+.loc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.1rem; }
+.loc-card { background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; padding: 0; display: flex; flex-direction: column; }
+.loc-photo { aspect-ratio: 3 / 2; background: var(--sand); overflow: hidden; }
+.loc-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.loc-photo .ph { width: 100%; height: 100%; }
+.loc-photo .ph svg { width: 46px; height: 46px; }
+.loc-body { padding: 1rem 1.15rem 1.2rem; display: flex; flex-direction: column; }
+.loc-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .55rem; }
+.loc-card .care, .loc-card .day { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; padding: .22rem .55rem; border-radius: 999px; }
+.loc-card .care { color: var(--coral-deep); background: var(--sand); }
+.loc-card .day  { color: #6b4f1c; background: color-mix(in srgb, var(--honey) 32%, #fff); }
+.loc-card h3 { font-size: 1.12rem; margin-bottom: .2rem; line-height: 1.25; }
+.loc-card .phil { color: var(--coral-deep); font-weight: 600; font-size: .9rem; margin-bottom: .7rem; }
+.loc-card dl { margin: 0; display: grid; grid-template-columns: 1.1rem 1fr; gap: .4rem .6rem; font-size: .92rem; align-items: start; }
+.loc-card dt { color: var(--coral-deep); display: grid; place-items: center; padding-top: .12rem; }
+.loc-card dt svg { width: 15px; height: 15px; }
 .loc-card dd { margin: 0; color: var(--ink-soft); }
-.loc-card a { word-break: break-word; }
+.loc-card dd a { word-break: break-word; }
+.loc-card .maplink { white-space: nowrap; font-weight: 600; }
+.loc-card .register { margin-top: .85rem; font-size: .9rem; color: var(--ink); }
+.loc-card .register span { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--coral-deep); margin-bottom: .1rem; }
 
 /* Philosophy blocks */
 .phil { display: grid; gap: 1.1rem; }
@@ -210,6 +223,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 .prose h2 { margin-top: 2.2rem; }
 .prose h3 { margin-top: 1.6rem; }
 .prose ul { padding-left: 1.2rem; }
+.prose ol { padding-left: 1.4rem; }
 .prose li { margin-bottom: .4rem; max-width: 64ch; }
 
 /* Editable placeholder marker */
@@ -238,3 +252,20 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
   html { scroll-behavior: auto; }
   * { animation: none !important; transition: none !important; }
 }
+
+/* Day filter (Locations) */
+.loc-filter { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 0 0 .7rem; }
+.loc-filter-btn { display: inline-flex; align-items: center; gap: .45rem; font-family: var(--body); font-weight: 600; font-size: .92rem; padding: .5rem .9rem; border-radius: 999px; border: 1.5px solid var(--line); background: var(--paper-2); color: var(--ink-soft); cursor: pointer; transition: background .12s ease, color .12s ease, border-color .12s ease; }
+.loc-filter-btn:hover { background: var(--sand); color: var(--ink); }
+.loc-filter-btn.is-active { background: var(--coral-deep); border-color: var(--coral-deep); color: #fff; }
+.loc-filter-btn span { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .35rem; border-radius: 999px; background: color-mix(in srgb, currentColor 16%, transparent); font-size: .78rem; font-weight: 700; }
+
+/* Social links on location cards */
+.loc-social { display: flex; gap: .5rem; margin-top: .85rem; }
+.loc-social .soc { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 999px; border: 1.5px solid var(--line); color: var(--coral-deep); transition: background .12s ease; }
+.loc-social .soc:hover { background: var(--sand); }
+.loc-social .soc svg { width: 17px; height: 17px; }
+
+#loc-filter-phil { margin-bottom: 1.6rem; }
+.loc-filter-label { font-size: .74rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); margin-right: .2rem; }
+.loc-none { grid-column: 1 / -1; text-align: center; color: var(--ink-soft); padding: 2.2rem 0; }

@@ -24,7 +24,7 @@
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="what-to-ask.html">Choosing Childcare</a></li>
-      <li><a href="philosophies.html">Philosophies</a></li>
+      <li><a href="educational-approaches.html">Educational Approaches</a></li>
       <li><a href="locations.html" aria-current="page">Locations</a></li>
       <li><a href="event.html">Professional Development</a></li>
     </ul>
@@ -44,7 +44,9 @@
            MAP  (optional but recommended)
            To add a map with a pin for each centre:
            1. Go to google.com/mymaps  →  Create a new map (free).
-           2. Add each centre as a point (search the address, "Add to map").
+           2. Import  locations-for-map.csv  (in this folder):  Create → Import →
+              pick that file → set the "Address" column as the location and
+              "Name" as the title. All programs plot at once (no typing).
            3. Share  →  set to "Anyone with the link".
            4. Menu (⋮)  →  "Embed on my site"  →  copy the <iframe> code.
            5. Replace the whole .map-placeholder <div> below with that iframe.
@@ -52,9 +54,12 @@
       <div class="map-frame">
         <div class="map-placeholder">
           <strong>Map coming soon</strong>
-          <span>Participating locations will be shown here.</span>
+          <span>All participating locations will appear here on a map.</span>
         </div>
       </div>
+
+      <div id="loc-filter" class="loc-filter" role="group" aria-label="Filter locations by day"></div>
+      <div id="loc-filter-phil" class="loc-filter" role="group" aria-label="Filter locations by approach"></div>
 
       <div class="loc-grid" id="loc-grid">
         <!-- Cards render automatically from data.js -->
@@ -62,7 +67,7 @@
 
       <p style="margin-top:2rem;color:var(--ink-soft);font-size:.95rem;">
         Don't see a program you expected? Listings are limited to centres confirmed for this year's event.
-        To be added, email <a href="mailto:hello@doorsopenchildcarerichmond.ca">hello@doorsopenchildcarerichmond.ca</a>.
+        To be added, email <a href="mailto:Pamela@ssocc.ca">Pamela@ssocc.ca</a>.
       </p>
     </div>
   </section>
@@ -78,14 +83,10 @@
       <h3>Explore</h3>
       <ul class="foot-links">
         <li><a href="what-to-ask.html">Choosing Childcare</a></li>
-        <li><a href="philosophies.html">Philosophies</a></li>
+        <li><a href="educational-approaches.html">Educational Approaches</a></li>
         <li><a href="locations.html">Locations</a></li>
         <li><a href="event.html">Professional Development</a></li>
       </ul>
-    </div>
-    <div>
-      <h3>Get in touch</h3>
-      <p>Questions about the event?<br><a href="mailto:hello@doorsopenchildcarerichmond.ca">hello@doorsopenchildcarerichmond.ca</a></p>
     </div>
   </div>
   <div class="wrap foot-note">
