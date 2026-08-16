@@ -269,3 +269,10 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 #loc-filter-phil { margin-bottom: 1.6rem; }
 .loc-filter-label { font-size: .74rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); margin-right: .2rem; }
 .loc-none { grid-column: 1 / -1; text-align: center; color: var(--ink-soft); padding: 2.2rem 0; }
+
+/* Group-by sections (Locations) */
+#loc-sort { margin-bottom: 1.8rem; }
+.loc-group { margin-bottom: 2.6rem; }
+.loc-group:last-child { margin-bottom: 0; }
+.loc-group-head { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 1.35rem; color: var(--ink); margin: 0 0 1.1rem; padding-bottom: .5rem; border-bottom: 2px solid var(--sand); display: flex; align-items: center; gap: .6rem; }
+.loc-group-head span { font-family: 'Figtree', system-ui, sans-serif; font-size: .78rem; font-weight: 700; color: var(--coral-deep); background: var(--sand); border-radius: 999px; padding: .18rem .55rem; }
