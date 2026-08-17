@@ -284,3 +284,6 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 /* three stacked filter rows */
 #loc-filter-care, #loc-filter-phil { margin-bottom: .55rem; }
 #loc-filter-day { margin-bottom: 1.9rem; }
+
+/* Fix: a hidden card must stay hidden despite the flex display above */
+.loc-card[hidden] { display: none !important; }
