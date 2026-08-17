@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Locations — Doors Open Childcare Richmond</title>
+<meta name="description" content="Licensed Richmond child care programs taking part in Doors Open Childcare, with addresses, care type, and contact details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M4 21h16"/><path d="M13 12h.01"/></svg>
+      Doors Open Childcare
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="what-to-ask.html">Choosing Childcare</a></li>
+      <li><a href="educational-approaches.html">Educational Approaches</a></li>
+      <li><a href="locations.html" aria-current="page">Locations</a></li>
+      <li><a href="event.html">Professional Development</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Participating programs</p>
+        <h2>Who's opening their doors</h2>
+        <p id="loc-status" class="lead-in">Participating locations are coming soon — check back closer to the event.</p>
+      </div>
+
+      <!-- Map: Google My Maps embed. To update, replace the mid= value with your map's ID. -->
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1NjvBHaXTS0-VgXuQgteb0_Q_Jhca4Xw" title="Map of participating Doors Open Childcare locations in Richmond" loading="lazy"></iframe>
+      </div>
+
+      <div id="loc-filter-care" class="loc-filter" role="group" aria-label="Filter by care type"></div>
+      <div id="loc-filter-phil" class="loc-filter" role="group" aria-label="Filter by approach"></div>
+      <div id="loc-filter-day" class="loc-filter" role="group" aria-label="Filter by event day"></div>
+
+      <div class="loc-grid" id="loc-grid">
+        <!-- Cards render automatically from data.js -->
+      </div>
+
+      <p style="margin-top:2rem;color:var(--ink-soft);font-size:.95rem;">
+        Don't see a program you expected? Listings are limited to centres confirmed for this year's event.
+        To be added, email <a href="mailto:Pamela@ssocc.ca">Pamela@ssocc.ca</a>.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <h3>Doors Open Childcare</h3>
+      <p>A community event connecting Richmond families with licensed child care — hosted alongside a professional development day for educators.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul class="foot-links">
+        <li><a href="what-to-ask.html">Choosing Childcare</a></li>
+        <li><a href="educational-approaches.html">Educational Approaches</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="event.html">Professional Development</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-note">
+    <p>© <span id="yr"></span> Doors Open Childcare Richmond. Program details are provided by each licensed operator. This site is informational and not affiliated with a government agency.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="site.js"></script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
