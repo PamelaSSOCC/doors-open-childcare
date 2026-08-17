@@ -158,7 +158,7 @@ a:hover { color: var(--coral-hover); }
   box-shadow: var(--shadow-soft); transition: transform .15s ease, box-shadow .15s ease;
 }
 .learn-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-.learn-media { aspect-ratio: 16 / 10; width: 100%; }
+.learn-media { aspect-ratio: 16 / 10; width: 100%; overflow: hidden; }
 .learn-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .learn-body { padding: 1.3rem 1.4rem 1.5rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
 .learn-body h3 { margin: 0; font-size: 1.3rem; }
