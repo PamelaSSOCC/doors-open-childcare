@@ -22,7 +22,7 @@
 
 const CENTRES = [
   {
-    name: "SSOCC Heron \u2013 Toddlers and Junior Kindergarten", photo: "", days: "Both days",
+    name: "SSOCC Heron \u2013 Toddlers and Junior Kindergarten", photo: "heron.jpg", days: "Both days",
     care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Reggio-inspired",
     address: "12091 Cambie Road, Richmond, BC (Richmond Adult Education Centre, beside Mitchell Elementary)",
     hours: "8:00 am \u2013 4:30 pm (extended to 5:30 pm)",
