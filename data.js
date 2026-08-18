@@ -148,15 +148,15 @@ const CENTRES = [
     phone: "778-995-0583", website: "https://www.kidnestdaycare.com"
   },
   {
-    name: "Little Earthlings Childcare", photo: "", days: "Both days",
+    name: "Little Earthlings Childcare", photo: "earthling.jpg", days: "Both days",
     care: "30 months \u2013 school age", philosophy: "Blended (Reggio-inspired, play-based)",
     address: "3871 Moncton St, Richmond, BC V7E 3A7 (Steveston Village)",
     hours: "7:30 am \u2013 5:30 pm, Mon\u2013Fri",
     closures: "BC statutory holidays, two-week winter break, one-week summer break",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    included: "Daily outdoor & nature experiences, seasonal activities, and special learning experiences (in tuition)",
+    included: "Daily morning and afternoon snacks, program activities, learning experiences, and special events are all included in tuition.",
     extras: "",
-    details: "In the heart of Steveston Village; strong family partnerships and a close-knit community.",
+    details: "A Reggio Emilia–inspired, play-based program where every child is seen as capable, curious, and unique. We follow children's interests, encourage exploration and creativity, and provide a warm, respectful environment where they feel safe, valued, and supported.",
     register: "Contact via the website or email; book a tour, then register",
     phone: "604-370-6228", website: "https://www.littleearthlings.ca"
   },
@@ -250,5 +250,52 @@ const CENTRES = [
     details: "",
     register: "Sign up for the waiting list",
     phone: "604-723-3117", website: "https://www.renaissancekids.ca"
+  },
+  {
+    name: "Willowbrae Academy Shellbridge", photo: "", days: "Both days",
+    care: "Infant/Toddler, 30 months – school age", philosophy: "Emergent / HighScope",
+    address: "10651 Shellbridge Way, Richmond, BC V6X 2V8",
+    hours: "7:00 am – 6:00 pm", closures: "To be announced",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "Full-time only. Rate sheet available at tours / open houses.",
+    included: "", extras: "Meals; extended hours; live-view camera",
+    details: "A new Willowbrae for the Shellbridge area — their largest, with 25+ rooms, serving 8 months to 5 years.",
+    register: "Book a tour to learn more",
+    phone: "672-971-9010", website: "https://willowbraechildcare.com/childcare-shellbridge-bc"
+  },
+  {
+    name: "Young Columbus Infant/Toddler Center", photo: "", days: "Both days",
+    care: "Infant/Toddler", philosophy: "Play-based",
+    address: "11160 Seafield Crescent, Richmond, BC",
+    hours: "8:00 am – 5:30 pm", closures: "Statutory holidays and 2 Pro-D days",
+    languages: "English, Mandarin, Cantonese", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "Full-time care: $998/month (CCFRI reflected in the posted tuition).",
+    included: "Meals; language instruction", extras: "", details: "",
+    register: "Call or email erica@ycchildcare.com",
+    phone: "604-370-4989", website: ""
+  },
+  {
+    name: "Hatch Kids Learning Centre – Garden City", photo: "", days: "Both days",
+    care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired",
+    address: "8311 Garden City Road, Richmond, BC",
+    hours: "8:00 am – 6:00 pm", closures: "Winter break, one-week summer break",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "After CCFRI — PreK daycare: full-time $1,003; part-time M/W/F $698, T/Th $552. Out-of-school care: $425 (Kindergarten), $527.50 (Gr. 1–7).",
+    included: "", extras: "",
+    details: "Reggio- and emergent-inspired programs for ages 3–12, including seasonal camps. One of three Richmond locations.",
+    register: "Registration information is on the website",
+    phone: "604-762-8181", website: "https://www.hatchkidslearning.com"
+  },
+  {
+    name: "Hatch Kids Learning Centre – Whiteside", photo: "", days: "Both days",
+    care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired",
+    address: "9282 Williams Road, Richmond, BC",
+    hours: "8:00 am – 6:00 pm", closures: "Winter, spring & summer breaks (seasonal camps available)",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "After CCFRI — PreK half-day (9am–1pm): full-time $497.50; part-time M/W/F $386.50, T/Th $291. PreK extended-day (9am–2:30pm): full-time $604; part-time M/W/F $458, T/Th $352. Out-of-school care: $406.50 (Kindergarten), $509 (Gr. 1–7).",
+    included: "", extras: "",
+    details: "Reggio- and emergent-inspired programs for ages 3–12, including seasonal camps. One of three Richmond locations.",
+    register: "Registration information is on the website",
+    phone: "604-762-8181", website: "https://www.hatchkidslearning.com"
   }
 ];
