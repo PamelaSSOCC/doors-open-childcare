@@ -221,9 +221,9 @@ const CENTRES = [
     care: "Preschool", philosophy: "Play-based",
     address: "4071 Francis Road, Richmond, BC V7C 1J8",
     hours: "9:00 am \u2013 1:00 pm", closures: "Winter break, spring break, and summer",
-    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "CCFRI reflected in the posted tuition.",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "CCFRI reflected in posted tuition.",
     included: "Art, music, games, stories, active & quiet play", extras: "",
-    details: "An enriched play-based program. Voted Best Preschool in Richmond 2026 — A-List Certified Awesome!",
+    details: "Dino-Mites was voted Best Preschool in Richmond 2026, we are A-LIST CERTIFIED AWESOME!",
     register: "Contact by phone, email, or through the website",
     phone: "604-272-2423", website: "https://www.dinomitespreschool.com",
     facebook: "https://www.facebook.com/dinomitespreschool2017"
@@ -304,9 +304,41 @@ const CENTRES = [
     address: "11371 No. 3 Road, Richmond, BC V7A 1X3",
     hours: "8:30 am \u2013 4:30 pm", closures: "",
     languages: "English, French, Mandarin", funding: "ACCB, CCFRI", fees: "",
-    included: "Snacks provided", extras: "",
-    details: "An independent, non-denominational early-years school (preschool to elementary, ages 2\u00bd\u201312) using a blended Montessori, Reggio Emilia, project-based, Whole Child approach. Small class sizes, high staff-to-student ratios, and multi-aged settings, with a strong emphasis on outdoor education and parent and grandparent participation \u2014 children even help harvest and cook fresh vegetables grown at the Ark Community Farm and Garden.",
-    register: "Email admissions at adinaark@gmail.com, WeChat, or call after 4:00 pm at 778-990-3520.",
+    included: "Snacks are provided.", extras: "",
+    details: "An independent, non-denominational early-years school for preschool to elementary (ages 2½–12), blending Montessori, Reggio Emilia, project-based learning, and a Whole Child approach. Small, multi-aged classes with high staff-to-student ratios and a strong emphasis on outdoor education — children even harvest and cook fresh veggies grown in the Ark Community Farm and Garden.",
+    register: "To register, email Admissions: adinaark@gmail.com, WeChat, or call us after 4:00 pm at 778-990-3520 (noahsarkschool.ca).",
     phone: "778-990-3520", website: "https://noahsarkschool.ca"
+  },
+  {
+    name: "River Run", photo: "", days: "Sat Oct 3 (AM)",
+    care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Play-based",
+    address: "10277 River Drive, Richmond, BC",
+    hours: "7:30 am \u2013 5:30 pm", closures: "3 annual professional-development days",
+    languages: "English, Cantonese, Mandarin, Korean, Punjabi, Hindi", funding: "ACCB, CCFRI, CCOF",
+    fees: "2-, 3-, and 5-day spaces available.",
+    included: "", extras: "",
+    details: "High-quality, inclusive child care grounded in early intervention and play-based learning, with experienced Early Childhood Educators. Inclusive practices foster understanding, acceptance, and respect for diversity.",
+    register: "Join the waitlist via the website (develop.bc.ca).",
+    phone: "604-233-5466", website: "https://www.develop.bc.ca"
+  },
+  {
+    name: "Choochootrain Montessori Learning Center", photo: "", days: "Sat Oct 3 (AM)",
+    care: "30 months \u2013 school age", philosophy: "Montessori",
+    address: "9555 Geal Road, Richmond, BC",
+    hours: "8:00 am \u2013 5:30 pm", closures: "",
+    languages: "English, Mandarin, Japanese", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "", included: "", extras: "", details: "",
+    register: "Email info@choochootrain.ca",
+    phone: "604-727-0289", website: "https://www.choochootrain.ca"
+  },
+  {
+    name: "Az-Zahra's Islamic Academy", photo: "", days: "Thu Oct 1 (eve)",
+    care: "30 months \u2013 school age, School-aged care", philosophy: "Academic / traditional",
+    address: "8580 No. 5 Road, Richmond, BC",
+    hours: "8:30 am \u2013 3:30 pm", closures: "A few days through the year",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "", included: "", extras: "", details: "",
+    register: "Register at an open house.",
+    phone: "604-404-7922", website: "https://azia.ca"
   }
 ];
