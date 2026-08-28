@@ -1,5 +1,5 @@
 /* ============================================================
-   PARTICIPATING CENTRES  \u2014  one consistent record per program
+   PARTICIPATING CENTRES  —  one consistent record per program
    ------------------------------------------------------------
    The Locations page lets families filter by care type, approach,
    and event day, and lists matching programs alphabetically.
@@ -7,24 +7,17 @@
    FIELDS (leave any "" to hide that line on the card):
 
      name, photo, days,
-     care        // one or more of: "Preschool" \u00b7 "Infant/Toddler" \u00b7 "30 months \u2013 school age" \u00b7 "School-aged care"
+     care        // one or more of: "Preschool" · "Infant/Toddler" · "30 months – school age" · "School-aged care"
      philosophy, address, hours,
      closures    // non-operational days (winter break, etc.)
      languages,
      funding     // kept for reference; NOT shown on the card
-     fees        // parent fees / tuition
+     fees        // parent fees / tuition (not collected on the intake form — fill in as you go)
      included    // extras included in the fee
      extras      // fee-for-service extras available to purchase
      details     // other important info about the program
      register, phone, website,
      instagram, facebook, youtube   // optional
-
-   NOTE ON ENCODING: all non-ASCII characters are written as \u escapes
-   (\u2013 en dash, \u2014 em dash, \u2019 apostrophe). Do not paste literal
-   dashes into this file \u2014 a previous version was saved in the wrong
-   encoding, which rendered en dashes as three garbled characters.
-
-   Last updated: 27 August 2026 \u2014 27 programs.
    ============================================================ */
 
 const CENTRES = [
@@ -55,7 +48,7 @@ const CENTRES = [
     facebook: "https://www.facebook.com/p/Crystal-Star-Daycare-an-InfantToddler-Child-Care-100054590433583/"
   },
   {
-    name: "Kiddo House Montessori", photo: "", days: "Sat Oct 3 (AM)",
+    name: "Kiddo House Montessori", photo: "kiddo.png", days: "Sat Oct 3 (AM)",
     care: "30 months \u2013 school age, School-aged care", philosophy: "Montessori",
     address: "6640 Blundell Road, Richmond, BC",
     hours: "Full day", closures: "Winter break",
@@ -119,7 +112,7 @@ const CENTRES = [
     phone: "778-999-9229", website: "https://www.littlekoalamontessori.com"
   },
   {
-    name: "Blue Whale Children's Learning Centre", photo: "", days: "Sat Oct 3 (AM)",
+    name: "Blue Whale Children's Learning Centre", photo: "bluewhale.png", days: "Sat Oct 3 (AM)",
     care: "30 months \u2013 school age", philosophy: "Blended (Montessori, purposeful play)",
     address: "8060 No. 1 Road, Richmond, BC",
     hours: "8:00 am \u2013 5:00 pm", closures: "Spring break, winter break",
@@ -130,7 +123,7 @@ const CENTRES = [
     phone: "604-754-7666", website: "https://www.bluewhaleedu.com"
   },
   {
-    name: "Cedar Studio Outdoor Learning", photo: "", days: "Both days",
+    name: "Cedar Studio Outdoor Learning", photo: "cedar.png", days: "Both days",
     care: "30 months \u2013 school age", philosophy: "Blended (Reggio-inspired, outdoor / land-based)",
     address: "Units 135 & 140, 6231 London Road, Richmond, BC",
     hours: "8:00 am \u2013 5:00 pm", closures: "One week spring, two weeks winter",
@@ -142,7 +135,7 @@ const CENTRES = [
     phone: "604-783-1014", website: "https://www.cedarstudio.co"
   },
   {
-    name: "Kid Nest Infant and Toddler Daycare", photo: "", days: "Sat Oct 3 (AM)",
+    name: "Kid Nest Infant and Toddler Daycare", photo: "kidsnest.png", days: "Sat Oct 3 (AM)",
     care: "Infant/Toddler", philosophy: "Blended (Montessori, play-based)",
     address: "8531 Leslie Road, Richmond, BC V6X 1E6",
     hours: "8:30 am \u2013 6:00 pm, Mon\u2013Fri", closures: "Winter break",
@@ -163,7 +156,7 @@ const CENTRES = [
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
     included: "Daily morning and afternoon snacks, program activities, learning experiences, and special events are all included in tuition.",
     extras: "",
-    details: "A Reggio Emilia\u2013inspired, play-based program where every child is seen as capable, curious, and unique. We follow children's interests, encourage exploration and creativity, and provide a warm, respectful environment where they feel safe, valued, and supported.",
+    details: "A Reggio Emilia–inspired, play-based program where every child is seen as capable, curious, and unique. We follow children's interests, encourage exploration and creativity, and provide a warm, respectful environment where they feel safe, valued, and supported.",
     register: "Contact via the website or email; book a tour, then register",
     phone: "604-370-6228", website: "https://www.littleearthlings.ca"
   },
@@ -178,7 +171,7 @@ const CENTRES = [
     phone: "778-798-8861", website: "https://www.ccssociety.ca"
   },
   {
-    name: "Terra Nova Nature School", photo: "", days: "Both days",
+    name: "Terra Nova Nature School", photo: "terranova.png", days: "Both days",
     care: "Preschool", philosophy: "Blended (nature-based, emergent)",
     address: "2680 River Road, Richmond, BC",
     hours: "9:00 am \u2013 1:00 pm; some afternoons 1:30 \u2013 3:30 pm",
@@ -224,13 +217,13 @@ const CENTRES = [
     instagram: "Lesco_Montessori", facebook: "https://www.facebook.com/p/Lesco-Montessori-School-100039731937048/"
   },
   {
-    name: "Dino-Mites Preschool", photo: "", days: "Sat Oct 3 (AM)",
+    name: "Dino-Mites Preschool", photo: "dinomites.png", days: "Sat Oct 3 (AM)",
     care: "Preschool", philosophy: "Play-based",
     address: "4071 Francis Road, Richmond, BC V7C 1J8",
     hours: "9:00 am \u2013 1:00 pm", closures: "Winter break, spring break, and summer",
-    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
+    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "CCFRI reflected in the posted tuition.",
     included: "Art, music, games, stories, active & quiet play", extras: "",
-    details: "An enriched play-based program.",
+    details: "An enriched play-based program. Voted Best Preschool in Richmond 2026 — A-List Certified Awesome!",
     register: "Contact by phone, email, or through the website",
     phone: "604-272-2423", website: "https://www.dinomitespreschool.com",
     facebook: "https://www.facebook.com/dinomitespreschool2017"
@@ -247,7 +240,7 @@ const CENTRES = [
     phone: "778-866-3572", website: "https://royalblueheronmontessoriacademy.ca"
   },
   {
-    name: "Renaissance Kids", photo: "", days: "Both days",
+    name: "Renaissance Kids", photo: "renkids.png", days: "Both days",
     care: "Infant/Toddler, 30 months \u2013 school age, School-aged care", philosophy: "Blended (Reggio, Montessori, academic)",
     address: "#1\u201312491 No. 2 Road, Richmond, BC",
     hours: "7:00 am \u2013 5:30 pm", closures: "Winter break",
@@ -260,13 +253,13 @@ const CENTRES = [
   },
   {
     name: "Willowbrae Academy Shellbridge", photo: "", days: "Both days",
-    care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Emergent / HighScope",
+    care: "Infant/Toddler, 30 months – school age", philosophy: "Emergent / HighScope",
     address: "10651 Shellbridge Way, Richmond, BC V6X 2V8",
-    hours: "7:00 am \u2013 6:00 pm", closures: "To be announced",
+    hours: "7:00 am – 6:00 pm", closures: "To be announced",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
     fees: "Full-time only. Rate sheet available at tours / open houses.",
     included: "", extras: "Meals; extended hours; live-view camera",
-    details: "A new Willowbrae for the Shellbridge area \u2014 their largest, with 25+ rooms, serving 8 months to 5 years.",
+    details: "A new Willowbrae for the Shellbridge area — their largest, with 25+ rooms, serving 8 months to 5 years.",
     register: "Book a tour to learn more",
     phone: "672-971-9010", website: "https://willowbraechildcare.com/childcare-shellbridge-bc"
   },
@@ -274,7 +267,7 @@ const CENTRES = [
     name: "Young Columbus Infant/Toddler Center", photo: "", days: "Both days",
     care: "Infant/Toddler", philosophy: "Play-based",
     address: "11160 Seafield Crescent, Richmond, BC",
-    hours: "8:00 am \u2013 5:30 pm", closures: "Statutory holidays and 2 Pro-D days",
+    hours: "8:00 am – 5:30 pm", closures: "Statutory holidays and 2 Pro-D days",
     languages: "English, Mandarin, Cantonese", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
     fees: "Full-time care: $998/month (CCFRI reflected in the posted tuition).",
     included: "Meals; language instruction", extras: "", details: "",
@@ -282,75 +275,38 @@ const CENTRES = [
     phone: "604-370-4989", website: ""
   },
   {
-    name: "Hatch Kids Learning Centre \u2013 Garden City", photo: "", days: "Both days",
-    care: "30 months \u2013 school age, School-aged care", philosophy: "Reggio-inspired",
+    name: "Hatch Kids Learning Centre – Garden City", photo: "", days: "Both days",
+    care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired",
     address: "8311 Garden City Road, Richmond, BC",
-    hours: "8:00 am \u2013 6:00 pm", closures: "Winter break, one-week summer break",
+    hours: "8:00 am – 6:00 pm", closures: "Winter break, one-week summer break",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
-    fees: "After CCFRI \u2014 PreK daycare: full-time $1,003; part-time M/W/F $698, T/Th $552. Out-of-school care: $425 (Kindergarten), $527.50 (Gr. 1\u20137).",
+    fees: "After CCFRI — PreK daycare: full-time $1,003; part-time M/W/F $698, T/Th $552. Out-of-school care: $425 (Kindergarten), $527.50 (Gr. 1–7).",
     included: "", extras: "",
-    details: "Reggio- and emergent-inspired programs for ages 3\u201312, including seasonal camps. One of three Richmond locations.",
+    details: "Reggio- and emergent-inspired programs for ages 3–12, including seasonal camps. One of three Richmond locations.",
     register: "Registration information is on the website",
     phone: "604-762-8181", website: "https://www.hatchkidslearning.com"
   },
   {
-    name: "Hatch Kids Learning Centre \u2013 Whiteside", photo: "", days: "Both days",
-    care: "30 months \u2013 school age, School-aged care", philosophy: "Reggio-inspired",
+    name: "Hatch Kids Learning Centre – Whiteside", photo: "", days: "Both days",
+    care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired",
     address: "9282 Williams Road, Richmond, BC",
-    hours: "8:00 am \u2013 6:00 pm", closures: "Winter, spring & summer breaks (seasonal camps available)",
+    hours: "8:00 am – 6:00 pm", closures: "Winter, spring & summer breaks (seasonal camps available)",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
-    fees: "After CCFRI \u2014 PreK half-day (9am\u20131pm): full-time $497.50; part-time M/W/F $386.50, T/Th $291. PreK extended-day (9am\u20132:30pm): full-time $604; part-time M/W/F $458, T/Th $352. Out-of-school care: $406.50 (Kindergarten), $509 (Gr. 1\u20137).",
+    fees: "After CCFRI — PreK half-day (9am–1pm): full-time $497.50; part-time M/W/F $386.50, T/Th $291. PreK extended-day (9am–2:30pm): full-time $604; part-time M/W/F $458, T/Th $352. Out-of-school care: $406.50 (Kindergarten), $509 (Gr. 1–7).",
     included: "", extras: "",
-    details: "Reggio- and emergent-inspired programs for ages 3\u201312, including seasonal camps. One of three Richmond locations.",
+    details: "Reggio- and emergent-inspired programs for ages 3–12, including seasonal camps. One of three Richmond locations.",
     register: "Registration information is on the website",
     phone: "604-762-8181", website: "https://www.hatchkidslearning.com"
   },
   {
-    name: "River Run", photo: "", days: "Sat Oct 3 (AM)",
-    care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Play-based",
-    address: "10277 River Drive, Richmond, BC",
-    hours: "7:30 am \u2013 5:30 pm",
-    closures: "3 team professional development days a year",
-    languages: "English, Cantonese, Mandarin, Korean, Punjabi, Hindi",
-    funding: "ACCB, CCFRI, CCOF", fees: "2-day, 3-day and 5-day spaces available.",
-    included: "", extras: "",
-    details: "Inclusive child care grounded in early intervention and play-based learning, with experienced early childhood educators. Inclusive practices foster understanding, acceptance and respect for diversity. Operated by the Developmental Disabilities Association.",
-    register: "Join the waitlist through the website",
-    phone: "604-233-5466", website: "https://www.develop.bc.ca/programs/children-and-youth/"
-  },
-  {
-    name: "Choo Choo Train Montessori Learning Centre", photo: "", days: "Sat Oct 3 (AM)",
-    care: "30 months \u2013 school age", philosophy: "Montessori",
-    address: "9555 Geal Road, Richmond, BC",
-    hours: "8:00 am \u2013 5:30 pm", closures: "",
-    languages: "English, Mandarin, Japanese",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    included: "", extras: "", details: "",
-    register: "Email info@choochootrain.ca",
-    phone: "604-727-0289", website: "https://www.choochootrain.ca"
-  },
-  {
-    name: "Noah's Ark Montessori Reggio Preschool & Elementary", photo: "", days: "Both days",
-    care: "Preschool, 30 months \u2013 school age", philosophy: "Blended (Montessori, Reggio-inspired)",
-    address: "11371 No. 3 Road, 2nd floor, Richmond, BC V7A 1X3",
-    hours: "8:30 am \u2013 4:30 pm", closures: "2 weeks",
-    languages: "English, French, Mandarin",
-    funding: "CCFRI, Wage Enhancement",
-    fees: "Morning, afternoon and full-day programs. Fee schedule on the website.",
-    included: "Snack; enhancement programs (yoga, language instruction)", extras: "",
-    details: "Montessori and Reggio / emergent curriculum for over 25 years.",
-    register: "Email an inquiry, or call admissions at 778-990-3520",
+    name: "Noah's Ark Montessori Reggio Preschool & Kindergarten", photo: "ark.png", days: "Sat Oct 3 (AM)",
+    care: "30 months \u2013 school age, School-aged care", philosophy: "Blended (Montessori, Reggio Emilia, outdoor)",
+    address: "11371 No. 3 Road, Richmond, BC V7A 1X3",
+    hours: "8:30 am \u2013 4:30 pm", closures: "",
+    languages: "English, French, Mandarin", funding: "ACCB, CCFRI", fees: "",
+    included: "Snacks provided", extras: "",
+    details: "An independent, non-denominational early-years school (preschool to elementary, ages 2\u00bd\u201312) using a blended Montessori, Reggio Emilia, project-based, Whole Child approach. Small class sizes, high staff-to-student ratios, and multi-aged settings, with a strong emphasis on outdoor education and parent and grandparent participation \u2014 children even help harvest and cook fresh vegetables grown at the Ark Community Farm and Garden.",
+    register: "Email admissions at adinaark@gmail.com, WeChat, or call after 4:00 pm at 778-990-3520.",
     phone: "778-990-3520", website: "https://noahsarkschool.ca"
-  },
-  {
-    name: "Az-Zahra's Islamic Academy", photo: "", days: "Thu Oct 1 (eve)",
-    care: "30 months \u2013 school age, School-aged care", philosophy: "Academic / traditional",
-    address: "8580 No. 5 Road, Richmond, BC",
-    hours: "8:30 am \u2013 3:30 pm", closures: "A few days through the year",
-    languages: "English",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    included: "", extras: "", details: "",
-    register: "Visit during the open house",
-    phone: "604-404-7922", website: "https://azia.ca"
   }
 ];
