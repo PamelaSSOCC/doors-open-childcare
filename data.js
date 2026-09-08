@@ -184,7 +184,7 @@ const CENTRES = [
     phone: "604-238-8437", website: "https://www.terranovanatureschool.com"
   },
   {
-    name: "Willow Children's Centre", photo: "willow.jpeg", days: "Sat Oct 3 (AM)",
+    name: "Willow Children's Centre", photo: "willow.png", days: "Sat Oct 3 (AM)",
     care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Reggio-inspired",
     address: "650\u20135688 Hollybridge Way, Richmond, BC",
     hours: "7:30 am \u2013 6:00 pm", closures: "Christmas to New Year",
