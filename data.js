@@ -217,7 +217,7 @@ const CENTRES = [
     instagram: "Lesco_Montessori", facebook: "https://www.facebook.com/p/Lesco-Montessori-School-100039731937048/"
   },
   {
-    name: "Dino-Mites Preschool", photo: "dinomites.png", days: "Sat Oct 3 (AM)",
+    name: "Dino-Mites Preschool", photo: "dinomites.png", days: "Thu Oct 1 (eve)",
     care: "Preschool", philosophy: "Play-based",
     address: "4071 Francis Road, Richmond, BC V7C 1J8",
     hours: "9:00 am \u2013 1:00 pm", closures: "Winter break, spring break, and summer",
