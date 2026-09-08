@@ -192,7 +192,7 @@ const CENTRES = [
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
     included: "", extras: "", details: "",
     register: "Join the Willow waitlist on the website",
-    phone: "604-307-3490", website: "https://www.richmondchildcare.org"
+    phone: "604-242-0204", website: "https://www.richmondchildcare.org"
   },
   {
     name: "Rothewood Academy \u2013 Richmond City Centre", photo: "", days: "Sat Oct 3 (AM)",
