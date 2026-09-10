@@ -374,5 +374,29 @@ const CENTRES = [
     details: "Ages 3\u20135 (children must be 3 by December 31). Monday/Wednesday/Friday and/or Tuesday/Thursday preschool for 2.5 hours, morning or afternoon classes. A 1.5-hour Junior Kindergarten program is available, extending the preschool day to 4 hours; it focuses on kindergarten readiness for children starting kindergarten in 2027.",
     register: "Contact Anne-Marie Olmstead-Wilcox, Preschool Coordinator, by email or phone.",
     phone: "604-238-8385", website: "https://www.richmond.ca/ChildCare"
+  },
+  {
+    name: "Circle of Friends & Time for Twos – City Centre", photo: "city.jpg", days: "Both days",
+    care: "Preschool", philosophy: "Play-based",
+    address: "5900 Minoru Blvd, Richmond, BC V6X 0L9",
+    hours: "Time for Twos: T/Th 9:30–11:30 am. Circle of Friends: M/W/F 9:00 am–12:30 pm, or T/Th 1:15–4:15 pm.",
+    closures: "", languages: "", funding: "CCFRI, ACCB",
+    fees: "Before CCFRI — Time for Twos: $205.70/mo (T/Th, 2 hrs). Circle of Friends: $322.50/mo (M/W/F, 3.5 hrs) or $196.70/mo (T/Th, 3 hrs). Plus a $50 enrolment fee. (CCFRI reduction varies monthly.)",
+    included: "Internal events throughout the year — pumpkin decorating, library visits, sports day, graduation, and more.", extras: "Optional add-ons: Winter Wonderland, Photo Day, Cultural Centre art workshops, and other activities.",
+    details: "Two programs: Time for Twos (born 2024, ages 2–2y11m) and Circle of Friends (born 2022–2023, ages 3–5).",
+    register: "Register online at citycentrecc.ca.",
+    phone: "", website: "https://www.citycentrecc.ca/post/preschool-registration"
+  },
+  {
+    name: "Circle of Friends & Time for Twos – Lang Centre", photo: "lang.jpg", days: "Both days",
+    care: "Preschool", philosophy: "Play-based",
+    address: "140-8279 Saba Road, Richmond, BC V6X 4B6",
+    hours: "Time for Twos: M/W/F 9:30–11:30 am. Circle of Friends: M/W/F 1:15–4:15 pm, or T/Th 9:00 am–12:30 pm.",
+    closures: "", languages: "", funding: "CCFRI, ACCB",
+    fees: "Before CCFRI — Time for Twos: $289.10/mo (M/W/F, 2 hrs). Circle of Friends: $276.45/mo (M/W/F, 3 hrs) or $229.45/mo (T/Th, 3.5 hrs). Plus a $50 enrolment fee. (CCFRI reduction varies monthly.)",
+    included: "Internal events throughout the year — pumpkin decorating, library visits, sports day, graduation, and more.", extras: "Optional add-ons: Winter Wonderland, Photo Day, Cultural Centre art workshops, and other activities.",
+    details: "Two programs: Time for Twos (born 2024, ages 2–2y11m) and Circle of Friends (born 2022–2023, ages 3–5).",
+    register: "Register online at citycentrecc.ca.",
+    phone: "", website: "https://www.citycentrecc.ca/post/preschool-registration"
   }
 ];
