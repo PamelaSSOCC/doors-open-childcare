@@ -44,6 +44,7 @@
     if (/academic|traditional/.test(d)) t.push('academic');
     if (/outdoor|nature|land[- ]based|place[- ]based/.test(d)) t.push('outdoor');
     if (/blended/.test(d)) t.push('blended');
+    if (/high[- ]?scope/.test(d)) t.push('highscope');
     return t;
   }
 
@@ -148,7 +149,7 @@
     noneEl.hidden = shown > 0;
     if (status) {
       if (cur.care === 'all' && cur.phil === 'all' && cur.day === 'all')
-        status.textContent = nAll + ' Richmond programs are taking part. Filter by care type, approach, or event day.';
+        status.textContent = nAll + ' Richmond programs are taking part.';
       else
         status.textContent = 'Showing ' + shown + ' of ' + nAll + ' programs.';
     }

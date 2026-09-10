@@ -252,18 +252,6 @@ const CENTRES = [
     phone: "604-723-3117", website: "https://www.renaissancekids.ca"
   },
   {
-    name: "Willowbrae Academy Shellbridge", photo: "", days: "Both days",
-    care: "Infant/Toddler, 30 months – school age", philosophy: "Emergent / HighScope",
-    address: "10651 Shellbridge Way, Richmond, BC V6X 2V8",
-    hours: "7:00 am – 6:00 pm", closures: "To be announced",
-    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
-    fees: "Full-time only. Rate sheet available at tours / open houses.",
-    included: "", extras: "Meals; extended hours; live-view camera",
-    details: "A new Willowbrae for the Shellbridge area — their largest, with 25+ rooms, serving 8 months to 5 years.",
-    register: "Book a tour to learn more",
-    phone: "672-971-9010", website: "https://willowbraechildcare.com/childcare-shellbridge-bc"
-  },
-  {
     name: "Young Columbus Infant/Toddler Center", photo: "", days: "Both days",
     care: "Infant/Toddler", philosophy: "Play-based",
     address: "11160 Seafield Crescent, Richmond, BC",
