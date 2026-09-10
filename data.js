@@ -340,5 +340,51 @@ const CENTRES = [
     fees: "", included: "", extras: "", details: "",
     register: "Register at an open house.",
     phone: "604-404-7922", website: "https://azia.ca"
+  },
+  {
+    name: "Kiddyland Multiple Intelligence Centre – Williams Centre", photo: "", days: "Both days",
+    care: "30 months – school age", philosophy: "Blended (Montessori-inspired, play-based)",
+    address: "11331 Williams Road, Richmond, BC",
+    hours: "8:00 am – 5:50 pm", closures: "Dec 23–31, 2026; Aug 30 – Sep 3, 2027",
+    languages: "English, French, Chinese", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "Part-day, part-week, and full-time options available.",
+    included: "Enhancement programs (yoga, language)", extras: "Extended hours",
+    details: "A child-centred program blending Montessori-inspired learning with a play-based approach — fostering independence, creativity, confidence, and a lifelong love of learning. Note: on Thursday, October 1, Kiddyland opens for the Open House at 5:30 pm.",
+    register: "Register online or email kiddylandmi@gmail.com",
+    phone: "604-241-2733", website: ""
+  },
+  {
+    name: "Kiddyland Multiple Intelligence Centre – McNeely Centre", photo: "", days: "Both days",
+    care: "30 months – school age", philosophy: "Blended (Montessori-inspired, play-based)",
+    address: "12440 Woodhead Road, Richmond, BC",
+    hours: "8:00 am – 5:50 pm", closures: "Dec 23–31, 2026; Aug 30 – Sep 3, 2027",
+    languages: "English, French, Chinese", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
+    fees: "Part-day, part-week, and full-time options available.",
+    included: "Enhancement programs (yoga, language)", extras: "Extended hours",
+    details: "A child-centred program blending Montessori-inspired learning with a play-based approach — fostering independence, creativity, confidence, and a lifelong love of learning. Note: on Thursday, October 1, Kiddyland opens for the Open House at 5:30 pm.",
+    register: "Register online or email kiddylandmi@gmail.com",
+    phone: "604-241-2733", website: ""
+  },
+  {
+    name: "Little Explorers", photo: "", days: "Both days",
+    care: "Preschool", philosophy: "Blended (nature-based, emergent)",
+    address: "Cambie Community Centre, 12800 Cambie Road, Richmond, BC V6V 0A9",
+    hours: "9:00 am \u2013 12:00 pm", closures: "Winter, spring & summer breaks",
+    languages: "English (educators speak French, Spanish, Tagalog, Bengali, Punjabi)",
+    funding: "", fees: "", included: "", extras: "",
+    details: "Ages 3\u20135 (children must be 3 by December 31). A unique 50/50 indoor and outdoor experience \u2014 over the 10-month preschool year, children spend about 5 months learning in the outdoor classroom and 5 months in the indoor classroom. Monday/Wednesday and/or Tuesday/Thursday preschool for 3 hours, mornings only. A 1-hour Junior Kindergarten program is available, extending the preschool day to 4 hours; it focuses on kindergarten readiness for children starting kindergarten in 2027.",
+    register: "Contact Anne-Marie Olmstead-Wilcox, Preschool Coordinator, by email or phone.",
+    phone: "604-238-8385", website: "https://www.richmond.ca/ChildCare"
+  },
+  {
+    name: "Kinderfun Preschool", photo: "", days: "Both days",
+    care: "Preschool", philosophy: "Blended (play-based, Reggio-inspired)",
+    address: "Cambie Community Centre, 12800 Cambie Road, Richmond, BC V6V 0A9",
+    hours: "9:00 am \u2013 11:30 am, 12:30 pm \u2013 3:00 pm", closures: "Winter, spring & summer breaks",
+    languages: "English (educators also speak French, Punjabi, Mandarin, Korean, Hindi, Urdu)",
+    funding: "", fees: "", included: "", extras: "",
+    details: "Ages 3\u20135 (children must be 3 by December 31). Monday/Wednesday/Friday and/or Tuesday/Thursday preschool for 2.5 hours, morning or afternoon classes. A 1.5-hour Junior Kindergarten program is available, extending the preschool day to 4 hours; it focuses on kindergarten readiness for children starting kindergarten in 2027.",
+    register: "Contact Anne-Marie Olmstead-Wilcox, Preschool Coordinator, by email or phone.",
+    phone: "604-238-8385", website: "https://www.richmond.ca/ChildCare"
   }
 ];
