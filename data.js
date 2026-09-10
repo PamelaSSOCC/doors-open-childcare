@@ -398,5 +398,18 @@ const CENTRES = [
     details: "Two programs: Time for Twos (born 2024, ages 2–2y11m) and Circle of Friends (born 2022–2023, ages 3–5).",
     register: "Register online at citycentrecc.ca.",
     phone: "", website: "https://www.citycentrecc.ca/post/preschool-registration"
+  },
+  {
+    name: "Tomorrow's Topkids Early Learning – Maple Lane", photo: "maple.jpg", days: "Both days",
+    care: "30 months – school age", philosophy: "Play-based",
+    address: "7671 Alouette Drive, Richmond, BC V7A 4P2 (Maple Lane Clubhouse)",
+    hours: "9:15 am – 2:15 pm, Mon–Fri (September–June)",
+    closures: "Winter, spring & summer school breaks; statutory and recognized holidays",
+    languages: "", funding: "CCFRI",
+    fees: "See ttk.org for current fees. CCFRI reduces fees by up to $365/month.",
+    included: "", extras: "",
+    details: "A play-based, 5-hour early learning program run by experienced Early Childhood Educators (max 20 children). Children explore through open-ended play — sensory play, big messy art, imaginative play, early literacy and numeracy, science and discovery — plus daily outdoor exploration (playground, sandbox, nature walks) and a group gathering with stories, songs, and dance. Note: on Thursday, October 1, this centre opens for the Open House at 6:00 pm (after-school care runs until 6:00).",
+    register: "Contact earlylearning@ttk.org or call 604-218-5179.",
+    phone: "604-218-5179", website: "https://www.ttk.org"
   }
 ];
