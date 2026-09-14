@@ -263,28 +263,26 @@ const CENTRES = [
     phone: "604-370-4989", website: ""
   },
   {
-    name: "Hatch Kids Learning Centre – Garden City", photo: "", days: "Both days",
+    name: "Hatch Kids Learning Centre – Garden City", photo: "garden.jpg", days: "Both days",
     care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired",
     address: "8311 Garden City Road, Richmond, BC",
     hours: "8:00 am – 6:00 pm", closures: "Winter break, one-week summer break",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
-    fees: "After CCFRI — PreK daycare: full-time $1,003; part-time M/W/F $698, T/Th $552. Out-of-school care: $425 (Kindergarten), $527.50 (Gr. 1–7).",
-    included: "", extras: "",
-    details: "Reggio- and emergent-inspired programs for ages 3–12, including seasonal camps. One of three Richmond locations.",
-    register: "Registration information is on the website",
-    phone: "604-762-8181", website: "https://www.hatchkidslearning.com"
+    fees: "", included: "", extras: "",
+    details: "Offers meaningful and engaging learning experiences through full- and part-time programs, as well as seasonal camps, for children ages 3 to 12. Inspired by the Reggio Emilia approach and emergent curriculum, its programs focus on supporting children's emotional, social, and academic development while fostering curiosity, confidence, and a love of learning. Programs are offered at three public elementary school locations: Debeck Elementary, Whiteside Elementary, and Garden City Elementary. Located directly on school grounds, the programs provide children with access to spacious fields and outdoor areas that encourage outdoor learning, active play, exploration, and meaningful connections with the wider school community.",
+    register: "Registration information is on the website or email info@hatchkidslearning.com",
+    phone: "778-870-8303", website: "https://www.hatchkidslearning.com"
   },
   {
-    name: "Hatch Kids Learning Centre – Whiteside", photo: "", days: "Both days",
+    name: "Hatch Kids Learning Centre – Whiteside", photo: "whiteside.jpg", days: "Both days",
     care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired",
     address: "9282 Williams Road, Richmond, BC",
     hours: "8:00 am – 6:00 pm", closures: "Winter, spring & summer breaks (seasonal camps available)",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
-    fees: "After CCFRI — PreK half-day (9am–1pm): full-time $497.50; part-time M/W/F $386.50, T/Th $291. PreK extended-day (9am–2:30pm): full-time $604; part-time M/W/F $458, T/Th $352. Out-of-school care: $406.50 (Kindergarten), $509 (Gr. 1–7).",
-    included: "", extras: "",
-    details: "Reggio- and emergent-inspired programs for ages 3–12, including seasonal camps. One of three Richmond locations.",
-    register: "Registration information is on the website",
-    phone: "604-762-8181", website: "https://www.hatchkidslearning.com"
+    fees: "", included: "", extras: "",
+    details: "Offers meaningful and engaging learning experiences through full- and part-time programs, as well as seasonal camps, for children ages 3 to 12. Inspired by the Reggio Emilia approach and emergent curriculum, its programs focus on supporting children's emotional, social, and academic development while fostering curiosity, confidence, and a love of learning. Programs are offered at three public elementary school locations: Debeck Elementary, Whiteside Elementary, and Garden City Elementary. Located directly on school grounds, the programs provide children with access to spacious fields and outdoor areas that encourage outdoor learning, active play, exploration, and meaningful connections with the wider school community.",
+    register: "Registration information is on the website or email info@hatchkidslearning.com",
+    phone: "778-838-6691", website: "https://www.hatchkidslearning.com"
   },
   {
     name: "Noah's Ark Montessori Reggio Preschool & Kindergarten", photo: "ark.png", days: "Sat Oct 3 (AM)",
