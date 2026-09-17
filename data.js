@@ -86,7 +86,7 @@ const CENTRES = [
     phone: "604-238-8497", website: "https://www.thompsonearlylearning.com"
   },
   {
-    name: "Little Koala Montessori Academy (Clarke Place)", photo: "", days: "Both days",
+    name: "Little Koala Montessori Academy (Clarke Place)", photo: "clarke.jpg", days: "Both days",
     care: "Infant/Toddler, 30 months \u2013 school age", philosophy: "Montessori (AMI/AMS)",
     address: "110\u201312855 Clarke Place, Richmond, BC",
     hours: "8:00 am \u2013 5:30 pm, Mon\u2013Fri",
@@ -94,12 +94,12 @@ const CENTRES = [
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
     fees: "$75 registration + one month's deposit",
     included: "", extras: "",
-    details: "Certified AMS/AMI Montessori teachers. 3 infant/toddler rooms (capacity 34), 1 junior kindergarten room (capacity 25).",
+    details: "Certified AMS/AMI Montessori teachers. 3 infant/toddler rooms (capacity 34), 1 junior kindergarten room (capacity 25). On Saturday, October 3, Little Koala runs a shortened Open House from 10:00 am to 12:00 pm.",
     register: "Contact Little Koala to register or join the waitlist",
     phone: "778-999-9229", website: "https://www.littlekoalamontessori.com"
   },
   {
-    name: "Little Koala Montessori Academy (Blundell Road)", photo: "", days: "Both days",
+    name: "Little Koala Montessori Academy (Blundell Road)", photo: "blundell.jpg", days: "Both days",
     care: "30 months \u2013 school age", philosophy: "Montessori (AMS)",
     address: "10011 Blundell Road, Richmond, BC",
     hours: "8:00 am \u2013 5:30 pm, Mon\u2013Fri",
@@ -107,7 +107,7 @@ const CENTRES = [
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
     fees: "$75 registration + one month's deposit",
     included: "", extras: "Optional hot lunch ($7\u20139/meal, third-party caterer; opt in/out anytime)",
-    details: "Certified AMS Montessori teachers. 2 junior kindergarten rooms (capacity 41).",
+    details: "Certified AMS Montessori teachers. 2 junior kindergarten rooms (capacity 41). On Saturday, October 3, Little Koala runs a shortened Open House from 10:00 am to 12:00 pm.",
     register: "Contact Little Koala to register or join the waitlist",
     phone: "778-999-9229", website: "https://www.littlekoalamontessori.com"
   },
