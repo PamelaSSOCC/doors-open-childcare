@@ -328,7 +328,7 @@ const CENTRES = [
     phone: "604-404-7922", website: "https://azia.ca"
   },
   {
-    name: "Kiddyland Multiple Intelligence Centre – Williams Centre", photo: "", days: "Both days",
+    name: "Kiddyland Multiple Intelligence Centre – Williams Centre", photo: "mcneely.jpg", days: "Both days",
     care: "30 months – school age", philosophy: "Blended (Montessori-inspired, play-based)",
     address: "11331 Williams Road, Richmond, BC",
     hours: "8:00 am – 5:50 pm", closures: "Dec 23–31, 2026; Aug 30 – Sep 3, 2027",
@@ -340,7 +340,7 @@ const CENTRES = [
     phone: "604-241-2733", website: ""
   },
   {
-    name: "Kiddyland Multiple Intelligence Centre – McNeely Centre", photo: "", days: "Both days",
+    name: "Kiddyland Multiple Intelligence Centre – McNeely Centre", photo: "mcneely.jpg", days: "Both days",
     care: "30 months – school age", philosophy: "Blended (Montessori-inspired, play-based)",
     address: "12440 Woodhead Road, Richmond, BC",
     hours: "8:00 am – 5:50 pm", closures: "Dec 23–31, 2026; Aug 30 – Sep 3, 2027",
