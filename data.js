@@ -168,7 +168,7 @@ const CENTRES = [
     languages: "English, Mandarin, Cantonese", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
     included: "", extras: "Meals; enhancement programs (yoga, language); extended hours", details: "",
     register: "Register at ccssociety.ca",
-    phone: "778-798-8861", website: "https://www.ccssociety.ca"
+    phone: "604-271-7600", website: "https://www.ccssociety.ca"
   },
   {
     name: "Terra Nova Nature School", photo: "terranova.png", days: "Both days",
