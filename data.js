@@ -409,5 +409,18 @@ const CENTRES = [
     details: "A play-based, 5-hour early learning program run by experienced Early Childhood Educators (max 20 children). Children explore through open-ended play — sensory play, big messy art, imaginative play, early literacy and numeracy, science and discovery — plus daily outdoor exploration (playground, sandbox, nature walks) and a group gathering with stories, songs, and dance. Maple Lane also offers Out of School Care (OSC) for Kindergarten to Grade 7, Monday to Friday from 7:00 am until the school bell and again from 2:45 to 6:00 pm — with afternoon snack, art, science and baking, and community outings, plus a Leaders Program from Grade 4 and Junior Staff roles in Grades 6–7. OSC also runs through Winter Break, Spring Break, and a Summer Program. Event hours: Thursday, October 1, the centre opens for the Open House at 6:00 pm (after-school care runs until 6:00); Saturday, October 3, 8:30 am – 1:30 pm.",
     register: "Contact earlylearning@ttk.org or call 604-218-5179.",
     phone: "604-218-5179", website: "https://www.ttk.org"
+  },
+  {
+    name: "Butterfly Progressive Montessori Childcare Centre", photo: "butterfly.jpg", days: "Thu Oct 1 (eve)",
+    care: "30 months \u2013 school age", philosophy: "Montessori",
+    address: "Rm 113, 7360 Lombard Road, Richmond, BC V7C 3N1",
+    hours: "8:30 am \u2013 3:30 pm (can extend to 5:00 pm)",
+    closures: "3 Pro-D days, spring break, and winter break",
+    languages: "English, Mandarin, Cantonese, Japanese, Urdu", funding: "CCFRI",
+    fees: "Before CCFRI \u2014 half-day $615/mo, full-day $1,240/mo.",
+    included: "", extras: "",
+    details: "",
+    register: "Book a tour to visit; a registration package will be provided.",
+    phone: "", website: "https://www.butterflymontessori.ca"
   }
 ];
