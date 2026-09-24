@@ -264,7 +264,7 @@ const CENTRES = [
   },
   {
     name: "Hatch Kids Learning Centre – Garden City", photo: "garden.jpg", days: "Both days",
-    care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired",
+    care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired, play-based",
     address: "8311 Garden City Road, Richmond, BC",
     hours: "8:00 am – 6:00 pm", closures: "Winter break, one-week summer break",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
@@ -275,7 +275,7 @@ const CENTRES = [
   },
   {
     name: "Hatch Kids Learning Centre – Whiteside", photo: "whiteside.jpg", days: "Both days",
-    care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired",
+    care: "30 months – school age, School-aged care", philosophy: "Reggio-inspired, play-based",
     address: "9282 Williams Road, Richmond, BC",
     hours: "8:00 am – 6:00 pm", closures: "Winter, spring & summer breaks (seasonal camps available)",
     languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement",
@@ -422,5 +422,29 @@ const CENTRES = [
     details: "",
     register: "Book a tour to visit; a registration package will be provided.",
     phone: "", website: "https://www.butterflymontessori.ca"
+  },
+  {
+    name: "With Our Own Two Hands Early Learning Centre", photo: "wmoth.jpg", days: "Thu Oct 1 (eve)",
+    care: "30 months \u2013 school age", philosophy: "Reggio-inspired, play-based",
+    address: "#110\u20133531 Bayview Street, Richmond, BC V7E 5W3",
+    hours: "9:00 am \u2013 5:00 pm, Mon\u2013Fri",
+    closures: "Statutory holidays, two weeks winter break, one week spring break (open through the summer)",
+    languages: "English", funding: "CCFRI",
+    fees: "", included: "",
+    extras: "Optional catered meal program \u2014 freshly prepared meals delivered to the centre.",
+    details: "A small, warm, thoughtfully designed early learning community where children are truly known. Our Reggio Emilia-inspired, play-based program follows each child's natural curiosity through hands-on exploration, creativity, meaningful relationships, and plenty of outdoor play. A close-knit, mixed-age environment with certified educators and flexible 2\u20135 day schedules \u2014 designed to feel less like a daycare and more like a second home. Flexible scheduling: families can choose 2, 3, 4, or 5 days per week, based on availability.",
+    register: "Register through our online Admission Portal, or email info@withourowntwohands.ca to arrange a tour.",
+    phone: "604-274-5277", website: "https://www.withourowntwohands.ca",
+    instagram: "withourowntwohands_learning"
+  },
+  {
+    name: "Richmond's Best After School Program", photo: "best.jpg", days: "Both days",
+    care: "School-aged care", philosophy: "",
+    address: "150-11780 Hammersmith Way, Richmond, BC V7A 5E9",
+    hours: "", closures: "",
+    languages: "", funding: "",
+    fees: "", included: "", extras: "", details: "",
+    register: "",
+    phone: "604-800-5248", website: "https://www.richmondafterschoolprogram.com"
   }
 ];
