@@ -441,11 +441,16 @@ const CENTRES = [
     name: "Richmond's Best After School Program", photo: "best.jpg", days: "Both days",
     care: "School-aged care", philosophy: "",
     address: "150-11780 Hammersmith Way, Richmond, BC V7A 5E9",
-    hours: "", closures: "",
+    hours: "After-school 3:00 \u2013 6:00 pm; day camps 8:30 am \u2013 6:00 pm",
+    closures: "Closed all statutory holidays",
     languages: "", funding: "",
-    fees: "", included: "", extras: "", details: "",
+    fees: "$100 registration (non-refundable). After-school (Sept\u2013June): $145/wk (2 days), $155/wk (3 days), $165/wk (4 days), $175/wk (5 days). Tuition is due year-round regardless of attendance; 30 days' notice to cancel.",
+    included: "Weekday evening & Saturday classes; Parents' Night Out (last Saturday monthly); early-dismissal & Pro-D day camps; winter, spring & summer camps; one free birthday party per year.",
+    extras: "",
+    details: "Summer program runs July and August, 8:30 am \u2013 6:00 pm.",
     register: "",
-    phone: "604-800-5248", website: "https://www.richmondafterschoolprogram.com"
+    phone: "604-800-5248", website: "https://www.richmondafterschoolprogram.com",
+    instagram: "richmondafterschoolandcamp", facebook: "https://www.facebook.com/richmondafterschoolandcamp"
   },
   {
     name: "Les Moussaillons", photo: "les.jpg", days: "Thu Oct 1 (eve)",
