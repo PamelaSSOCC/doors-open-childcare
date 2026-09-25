@@ -458,7 +458,7 @@ const CENTRES = [
     address: "\u00c9cole des Navigateurs, 8580 Kilgour Place, Richmond, BC V7C 3R1",
     hours: "7:30 am \u2013 5:30 pm, Mon\u2013Fri (follows the CSF school year; closed in summer)",
     closures: "Follows the CSF school calendar; closed during the summer (open on professional development days)",
-    languages: "French, English, Arabic \u2014 instruction in French", funding: "ACCB, CCFRI, CCOF",
+    languages: "French, English \u2014 instruction in French and English", funding: "ACCB, CCFRI, CCOF",
     fees: "", included: "", extras: "",
     details: "A diverse, connected community supporting Francophone families in Richmond, for ages 30 months to 5 years. Attentive, skilled care that promotes independence, with a bi-weekly themed calendar, consistent routines, and plenty of outdoor play \u2014 including regular access to the school gym and community garden. Bi-monthly field trips to places like a pumpkin patch, a farm, the planetarium, and the Reifel bird sanctuary. A non-profit run by a board of parent volunteers. Come and meet us!",
     register: "Call 604-488-4235 or email les.moussaillons@outlook.com",
