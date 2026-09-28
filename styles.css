@@ -290,3 +290,9 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 
 /* Photos on Educational Approaches cards */
 .phil-photo { width: 100%; aspect-ratio: 5 / 2; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; display: block; }
+
+/* Event date/time line under the Locations title */
+.loc-dates { margin: .35rem 0 1.6rem; color: var(--coral-deep); font-weight: 600; line-height: 1.7; }
+
+/* Thursday hours note under the Locations dates */
+.loc-note { margin: .1rem 0 1.6rem; font-size: .95rem; line-height: 1.5; color: var(--ink-soft); max-width: 60ch; background: var(--sand); border-left: 4px solid var(--honey); border-radius: 8px; padding: .7rem .9rem; }

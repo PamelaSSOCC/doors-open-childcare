@@ -48,18 +48,6 @@ const CENTRES = [
     facebook: "https://www.facebook.com/p/Crystal-Star-Daycare-an-InfantToddler-Child-Care-100054590433583/"
   },
   {
-    name: "Kiddo House Montessori", photo: "kiddo.png", days: "Sat Oct 3 (AM)",
-    care: "30 months \u2013 school age, School-aged care", philosophy: "Montessori",
-    address: "6640 Blundell Road, Richmond, BC",
-    hours: "Full day", closures: "Winter break",
-    languages: "English, Mandarin, Cantonese",
-    funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    included: "Mandarin club", extras: "Meals (two snacks + hot lunch)",
-    details: "Experienced staff, most on the team over a year.",
-    register: "Register online or email kiddohousechildcare@gmail.com",
-    phone: "778-886-0626", website: "https://kiddohousechildcare.ca"
-  },
-  {
     name: "Hello Kids Learn \u2013 Afterschool Care and Daycamps", photo: "", days: "Both days",
     care: "School-aged care", philosophy: "Academic / traditional",
     address: "Unit 201, 6640 Blundell Rd, Richmond, BC V7C 1H8",
@@ -358,7 +346,7 @@ const CENTRES = [
     hours: "9:00 am \u2013 12:00 pm", closures: "Winter, spring & summer breaks",
     languages: "English (educators speak French, Spanish, Tagalog, Bengali, Punjabi)",
     funding: "", fees: "", included: "", extras: "",
-    details: "Ages 3\u20135 (children must be 3 by December 31). A unique 50/50 indoor and outdoor experience \u2014 over the 10-month preschool year, children spend about 5 months learning in the outdoor classroom and 5 months in the indoor classroom. Monday/Wednesday and/or Tuesday/Thursday preschool for 3 hours, mornings only. A 1-hour Junior Kindergarten program is available, extending the preschool day to 4 hours; it focuses on kindergarten readiness for children starting kindergarten in 2027.",
+    details: "Ages 3\u20135 (children must be 3 by December 31). A unique 50/50 indoor and outdoor experience \u2014 over the 10-month preschool year, children spend about 5 months learning in the outdoor classroom and 5 months in the indoor classroom. Monday/Wednesday and/or Tuesday/Thursday preschool for 3 hours, mornings only. A 1-hour Junior Kindergarten program is available, extending the preschool day to 4 hours; it focuses on kindergarten readiness for children starting kindergarten in 2027. On Thursday, October 1, this program is open 5:00 – 6:30 pm only.",
     register: "Contact Anne-Marie Olmstead-Wilcox, Preschool Coordinator, by email or phone.",
     phone: "604-238-8385", website: "https://www.richmond.ca/ChildCare"
   },
@@ -369,7 +357,7 @@ const CENTRES = [
     hours: "9:00 am \u2013 11:30 am, 12:30 pm \u2013 3:00 pm", closures: "Winter, spring & summer breaks",
     languages: "English (educators also speak French, Punjabi, Mandarin, Korean, Hindi, Urdu)",
     funding: "", fees: "", included: "", extras: "",
-    details: "Ages 3\u20135 (children must be 3 by December 31). Monday/Wednesday/Friday and/or Tuesday/Thursday preschool for 2.5 hours, morning or afternoon classes. A 1.5-hour Junior Kindergarten program is available, extending the preschool day to 4 hours; it focuses on kindergarten readiness for children starting kindergarten in 2027.",
+    details: "Ages 3\u20135 (children must be 3 by December 31). Monday/Wednesday/Friday and/or Tuesday/Thursday preschool for 2.5 hours, morning or afternoon classes. A 1.5-hour Junior Kindergarten program is available, extending the preschool day to 4 hours; it focuses on kindergarten readiness for children starting kindergarten in 2027. On Thursday, October 1, this program is open 5:00 – 6:30 pm only.",
     register: "Contact Anne-Marie Olmstead-Wilcox, Preschool Coordinator, by email or phone.",
     phone: "604-238-8385", website: "https://www.richmond.ca/ChildCare"
   },
