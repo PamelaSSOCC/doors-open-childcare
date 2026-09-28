@@ -62,7 +62,7 @@ const CENTRES = [
     phone: "778-951-3438", website: "https://www.hellokidslearn.com"
   },
   {
-    name: "Thompson Early Learning \u2013 Rompers Preschool", photo: "", days: "Both days",
+    name: "Thompson Early Learning \u2013 Rompers Preschool", photo: "rompers.jpg", days: "Thu Oct 1 (eve)",
     care: "Preschool", philosophy: "Blended (play-based, Reggio-inspired)",
     address: "Thompson Community Centre, 5151 Granville Ave, Richmond, BC V7C 1E6",
     hours: "9:00 am \u2013 1:00 pm", closures: "Winter, spring & summer breaks",
