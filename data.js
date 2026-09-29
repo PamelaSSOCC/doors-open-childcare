@@ -167,8 +167,9 @@ const CENTRES = [
     languages: "English (educators also speak German, Japanese, French)",
     funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
     included: "", extras: "",
-    details: "An outdoor school in its 13th year, operated by the Thompson Community Association.",
-    register: "Complete the online registration, then email the Director",
+    details: "Terra Nova Nature School is nestled within Terra Nova Rural Park, a beautiful 63-acre natural parkland in Richmond. In every season and all kinds of weather, children spend most of their days outdoors, exploring fields, forests, and winding pathways. Our expansive garden offers hands-on opportunities to connect with where their food comes from — planting seeds, tending the garden, and harvesting fruits and vegetables. Guided by experienced Early Childhood Educators, our play-based programs nurture children's curiosity, creativity, confidence, and connection to the natural world while supporting their development across all areas of learning.",
+    arrival: "For Open Doors, park in the first big lot for the Terra Nova Adventure Play Area along River Road. Cross the driveway and walk east toward the two heritage buildings — the school is in the smaller yellow house. Call 604-788-5830 if you need help finding it.",
+    register: "To waitlist or register, please contact Emily Vera, Director of Childcare Services, at natureschool@richmond.ca or 604-238-8437.",
     phone: "604-238-8437", website: "https://www.terranovanatureschool.com"
   },
   {

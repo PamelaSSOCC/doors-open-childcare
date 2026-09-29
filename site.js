@@ -102,6 +102,7 @@
 
     var reg = c.register ? '<p class="register"><span>Register</span>' + esc(c.register) + '</p>' : '';
     var phil = c.philosophy ? '<p class="phil">' + esc(c.philosophy) + '</p>' : '';
+    var arrival = c.arrival ? '<div class="loc-arrival"><strong>Getting there on event day</strong>' + esc(c.arrival) + '</div>' : '';
 
     return '<article class="loc-card" data-care="' + careTags(c).join(' ') + '" data-phil="' + philTags(c).join(' ') + '" data-day="' + dayTags(c).join(' ') + '">' +
              '<div class="loc-photo">' + media + '</div>' +
@@ -110,7 +111,7 @@
                '<h3>' + esc(c.name) + '</h3>' + phil +
                '<dl class="loc-facts">' + facts + '</dl>' +
                (detail ? '<dl class="loc-detail">' + detail + '</dl>' : '') +
-               social + reg +
+               arrival + social + reg +
              '</div>' +
            '</article>';
   }
