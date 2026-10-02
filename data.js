@@ -400,7 +400,7 @@ const CENTRES = [
     phone: "", website: "https://www.butterflymontessori.ca"
   },
   {
-    name: "With Our Own Two Hands Early Learning Centre", photo: "wmoth.jpg", days: "Thu Oct 1 (eve)",
+    name: "With Our Own Two Hands Early Learning Centre", photo: "wmoth.jpg", days: "Both days",
     care: "30 months \u2013 school age", philosophy: "Reggio-inspired, play-based",
     address: "#110\u20133531 Bayview Street, Richmond, BC V7E 5W3",
     hours: "9:00 am \u2013 5:00 pm, Mon\u2013Fri",
