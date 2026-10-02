@@ -35,19 +35,6 @@ const CENTRES = [
     instagram: "ssoccchildcare", facebook: "https://www.facebook.com/Stevestonsocietyofchildrenscentres/", youtube: "StevestonSocietyofCC"
   },
   {
-    name: "Crystal Star Daycare", photo: "", days: "Thu Oct 1 (eve)",
-    care: "Infant/Toddler", philosophy: "Play-based",
-    address: "10631 Gilmore Crescent, Richmond, BC",
-    hours: "7:30 am \u2013 4:30 pm, Mon\u2013Fri",
-    closures: "Winter and summer, about 2 weeks each",
-    languages: "English", funding: "ACCB, CCFRI, CCOF, Wage Enhancement", fees: "",
-    included: "", extras: "",
-    details: "Only 4 children per day, all under 3. Serving the community 20+ years. Staff hold ECE + Infant/Toddler certification; big back garden.",
-    register: "Email crystalstardaycare@shaw.ca or call 604-276-9816",
-    phone: "604-276-9816", website: "",
-    facebook: "https://www.facebook.com/p/Crystal-Star-Daycare-an-InfantToddler-Child-Care-100054590433583/"
-  },
-  {
     name: "Hello Kids Learn \u2013 Afterschool Care and Daycamps", photo: "", days: "Both days",
     care: "School-aged care", philosophy: "Academic / traditional",
     address: "Unit 201, 6640 Blundell Rd, Richmond, BC V7C 1H8",
@@ -428,6 +415,7 @@ const CENTRES = [
   },
   {
     name: "Richmond's Best After School Program", photo: "best.jpg", days: "Both days",
+    alert: "Saturday, October 3 hours are now 10:30 am \u2013 3:00 pm.",
     care: "School-aged care", philosophy: "",
     address: "150-11780 Hammersmith Way, Richmond, BC V7A 5E9",
     hours: "After-school 3:00 \u2013 6:00 pm; day camps 8:30 am \u2013 6:00 pm",

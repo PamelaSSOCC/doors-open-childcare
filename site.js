@@ -103,10 +103,11 @@
     var reg = c.register ? '<p class="register"><span>Register</span>' + esc(c.register) + '</p>' : '';
     var phil = c.philosophy ? '<p class="phil">' + esc(c.philosophy) + '</p>' : '';
     var arrival = c.arrival ? '<div class="loc-arrival"><strong>Getting there on event day</strong>' + esc(c.arrival) + '</div>' : '';
+    var alert = c.alert ? '<div class="loc-alert"><strong>Last-minute update</strong>' + esc(c.alert) + '</div>' : '';
 
     return '<article class="loc-card" data-care="' + careTags(c).join(' ') + '" data-phil="' + philTags(c).join(' ') + '" data-day="' + dayTags(c).join(' ') + '">' +
              '<div class="loc-photo">' + media + '</div>' +
-             '<div class="loc-body">' +
+             '<div class="loc-body">' + alert +
                (tags ? '<div class="loc-tags">' + tags + '</div>' : '') +
                '<h3>' + esc(c.name) + '</h3>' + phil +
                '<dl class="loc-facts">' + facts + '</dl>' +
